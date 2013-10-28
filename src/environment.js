@@ -86,6 +86,8 @@ function makeMethod(name, registrations) {
 //
 //   * `method(name, predicate, f)` - adds an multimethod implementation
 //   * `property(name, value)` - sets a property to value
+//   * `envConcat(extraMethods, extraProperties)` - adds methods + properties
+//   * `envAppend(e)` - combines two environments, biased to `e`
 //
 function environment(methods, properties) {
     var self = getInstance(this, environment),
@@ -107,6 +109,29 @@ function environment(methods, properties) {
     self.property = function(name, value) {
         var newProperties = extend(properties, singleton(name, value));
         return environment(methods, newProperties);
+    };
+
+    self.envConcat = function(extraMethods, extraProperties) {
+        var newMethods = {},
+            newProperties = {},
+            i;
+
+        for(i in methods) {
+            newMethods[i] = methods[i].concat(extraMethods[i]);
+        }
+        for(i in extraMethods) {
+            if(i in newMethods) continue;
+            newMethods[i] = extraMethods[i];
+        }
+
+        return environment(
+            newMethods,
+            extend(properties, extraProperties)
+        );
+    };
+
+    self.envAppend = function(e) {
+        return e.envConcat(methods, properties);
     };
 
     for(var i in methods) {

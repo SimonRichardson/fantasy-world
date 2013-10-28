@@ -16,7 +16,8 @@ var prelude = require('./src/prelude'),
 	lenses = require('fantasy-lenses/lens'),
 	fantasy = environment();
 
-fantasy = fantasy
+fantasy = fantasy.envConcat({}, prelude)
+
 	//
 	//  ## Daggy
 	//  [https://github.com/puffnfresh/daggy](daggy)
