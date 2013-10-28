@@ -256,6 +256,10 @@ var isArrayOf = isInstanceOf(arrayOf);
 var isObjectLike = isInstanceOf(objectLike);
 
 exports = module.exports = {
+    functionName: functionName,
+    functionLength: functionLength,
+    bind: bind,
+    curry: curry,
     create: create,
     getInstance: getInstance,
     extend: extend,
