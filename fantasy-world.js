@@ -6,6 +6,14 @@ var prelude = require('./src/prelude'),
 	promises = require('./node_modules/fantasy-promises/index'),
 	validations = require('./node_modules/fantasy-validations/validation'),
 	states = require('./node_modules/fantasy-states/state'),
+	options = require('./node_modules/fantasy-options/option'),
+	eithers = require('./node_modules/fantasy-eithers/either'),
+	io = require('./node_modules/fantasy-io/io'),
+	tuples = require('./node_modules/fantasy-tuples/tuples'),
+	cofrees = require('./node_modules/fantasy-cofrees/cofree'),
+	readers = require('./node_modules/fantasy-readers/reader'),
+	stores = require('./node_modules/fantasy-stores/store'),
+	lenses = require('./node_modules/fantasy-lenses/lens'),
 	fantasy = environment();
 
 fantasy = fantasy
@@ -51,6 +59,58 @@ fantasy = fantasy
 	//  ## Fantasy-Land States
 	//  [https://github.com/puffnfresh/fantasy-states](fantasy-states)
 	//
-	.property('State', states);
+	.property('State', states)
 
+	//
+	//  ## Fantasy-Land Options
+	//  [https://github.com/puffnfresh/fantasy-options](fantasy-options)
+	//
+	.property('Option', options)
+
+	//
+	//  ## Fantasy-Land Eithers
+	//  [https://github.com/puffnfresh/fantasy-eithers](fantasy-eithers)
+	//
+	.property('Either', eithers)
+
+	//
+	//  ## Fantasy-Land IO
+	//  [https://github.com/puffnfresh/fantasy-io](fantasy-io)
+	//
+	.property('IO', io)
+
+	//
+	//  ## Fantasy-Land Tuples
+	//  [https://github.com/puffnfresh/fantasy-tuples](fantasy-tuples)
+	//
+	.property('Tuple2', tuples.Tuple2)
+	.property('Tuple3', tuples.Tuple3)
+	.property('Tuple4', tuples.Tuple4)
+	.property('Tuple5', tuples.Tuple5)
+
+	//
+	//  ## Fantasy-Land Cofrees
+	//  [https://github.com/puffnfresh/fantasy-cofrees](fantasy-cofrees)
+	//
+	.property('Cofree', cofrees)
+
+	//
+	//  ## Fantasy-Land Readers
+	//  [https://github.com/puffnfresh/fantasy-readers](fantasy-readers)
+	//
+	.property('Reader', readers)
+
+	//
+	//  ## Fantasy-Land Stores
+	//  [https://github.com/puffnfresh/fantasy-stores](fantasy-stores)
+	//
+	.property('Store', stores)
+
+	//
+	//  ## Fantasy-Land Lenses
+	//  [https://github.com/puffnfresh/fantasy-lenses](fantasy-lenses)
+	//
+	.property('Lens', lenses.Lens)
+	.property('PartialLens', lenses.PartialLens);
+	
 exports = module.exports = fantasy;

@@ -21,7 +21,15 @@
 		"fantasy-identities": "0.0.x",
 		"fantasy-promises": "0.1.x",
 		"fantasy-validations": "0.0.x",
-		"fantasy-states": "0.0.x"
+		"fantasy-states": "0.0.x",
+		"fantasy-options": "0.0.x",
+		"fantasy-eithers": "0.0.x",
+		"fantasy-io": "0.0.x",
+		"fantasy-tuples": "0.0.x",
+		"fantasy-cofrees": "0.0.x",
+		"fantasy-readers": "0.0.x",
+		"fantasy-stores": "0.0.x",
+		"fantasy-lenses": "0.0.x"
 	},
 	"devDependencies": {
 		"grunt-cli": "0.1.9",
