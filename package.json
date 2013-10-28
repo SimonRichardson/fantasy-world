@@ -18,7 +18,8 @@
 	"dependencies": {
 		"daggy": "0.0.x",
 		"fantasy-combinators": "0.0.x",
-		"fantasy-identities": "0.0.x"
+		"fantasy-identities": "0.0.x",
+		"fantasy-promises": "0.1.x"
 	},
 	"devDependencies": {
 		"grunt-cli": "0.1.9",
