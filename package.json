@@ -16,6 +16,7 @@
 		"url": "https://github.com/SimonRichardson/fantasy-world.git"
 	},
 	"dependencies": {
+		"daggy": "0.0.x",
 		"fantasy-combinators": "0.0.x"
 	},
 	"devDependencies": {
