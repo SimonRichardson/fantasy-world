@@ -5,7 +5,6 @@ var prelude = require('./prelude'),
 
 //   # Environment
 //
-//
 //   An environment holds methods and properties.
 //
 //   Methods are implemented as multi-methods, which allow a form of

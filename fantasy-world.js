@@ -1,22 +1,27 @@
 var prelude = require('./src/prelude'),
 	environment = require('./src/environment'),
-	daggy = require('daggy/daggy'),
-	combinators = require('fantasy-combinators/combinators'),
-	identities = require('fantasy-identities/identity'),
-	promises = require('fantasy-promises/index'),
-	validations = require('fantasy-validations/validation'),
-	states = require('fantasy-states/state'),
-	options = require('fantasy-options/option'),
-	eithers = require('fantasy-eithers/either'),
-	io = require('fantasy-io/io'),
-	tuples = require('fantasy-tuples/tuples'),
-	cofrees = require('fantasy-cofrees/cofree'),
-	readers = require('fantasy-readers/reader'),
-	stores = require('fantasy-stores/store'),
-	lenses = require('fantasy-lenses/lens'),
+	daggy = require('daggy'),
+	combinators = require('fantasy-combinators'),
+	identities = require('fantasy-identities'),
+	promises = require('fantasy-promises'),
+	validations = require('fantasy-validations'),
+	states = require('fantasy-states'),
+	options = require('fantasy-options'),
+	eithers = require('fantasy-eithers'),
+	io = require('fantasy-io'),
+	tuples = require('fantasy-tuples'),
+	cofrees = require('fantasy-cofrees'),
+	readers = require('fantasy-readers'),
+	stores = require('fantasy-stores'),
+	lenses = require('fantasy-lenses'),
 	fantasy = environment();
 
 fantasy = fantasy.envConcat({}, prelude)
+	
+	//
+	//  ## Environment
+	//  
+	.property('environment', environment)
 
 	//
 	//  ## Daggy

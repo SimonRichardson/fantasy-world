@@ -21,7 +21,7 @@
 		"fantasy-identities": "0.0.x",
 		"fantasy-promises": "0.1.x",
 		"fantasy-validations": "0.0.x",
-		"fantasy-states": "0.0.x",
+		"fantasy-states": "0.2.1",
 		"fantasy-options": "0.0.x",
 		"fantasy-eithers": "0.0.x",
 		"fantasy-io": "0.0.x",
@@ -39,7 +39,7 @@
 	"scripts": {
 		"test": "grunt"
 	},
-	"files": ["fantasy-world.js"],
+	"files": ["fantasy-world.js", "src/*.js"],
 	"main": "fantasy-world.js",
-  	"version": "0.0.1"
+  	"version": "0.0.4"
 }
