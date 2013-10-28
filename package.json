@@ -1,0 +1,32 @@
+{
+	"name": "fantasy-world",
+	"description": "Collection of common algebraic structures in JavaScript using Fantasy-Land.",
+	"author": "Simon Richardson <stickupkid@gmail.com> (https://github.com/SimonRichardson)",
+	"homepage": "https://github.com/SimonRichardson/fantasy-world",
+	"license": "MIT",
+	"keywords": [
+		"algebraic",
+		"monad",
+		"functor",
+		"monoid",
+		"semigroup"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SimonRichardson/fantasy-world.git"
+	},
+	"dependencies": {
+		"fantasy-combinators": "0.0.x"
+	},
+	"devDependencies": {
+		"grunt-cli": "0.1.9",
+		"grunt": "0.4.x",
+		"grunt-contrib-jshint": "0.6.x"
+	},
+	"scripts": {
+		"test": "grunt"
+	},
+	"files": ["fantasy-world.js"],
+	"main": "fantasy-world.js",
+  	"version": "0.0.1"
+}
