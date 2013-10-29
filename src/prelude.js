@@ -255,6 +255,35 @@ var isArrayOf = isInstanceOf(arrayOf);
 //
 var isObjectLike = isInstanceOf(objectLike);
 
+//
+//  ## strictEquals(a)(b)
+//
+//  Curried function for `===`.
+//
+function strictEquals(a) {
+    return function(b) {
+        return a === b;
+    };
+}
+
+//
+//  ## oneOf
+//
+//  Selects one of the values at random.
+//
+function oneOf(a) {
+    return a[Math.floor(this.randomRange(0, a.length))];
+}
+
+//
+//  ## randomRange(a, b)
+//
+//  Returns a random number between the range.
+//
+function randomRange(a, b) {
+    return Math.random() * (b - a) + a;
+}
+
 exports = module.exports = {
     functionName: functionName,
     functionLength: functionLength,
@@ -275,5 +304,8 @@ exports = module.exports = {
     isArray: isArray,
     isInstanceOf: isInstanceOf,
     isArrayOf: isArrayOf,
-    isObjectLike: isObjectLike
+    isObjectLike: isObjectLike,
+    strictEquals: strictEquals,
+    oneOf: oneOf,
+    randomRange: randomRange
 };
