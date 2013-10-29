@@ -75,7 +75,7 @@ function findRegistered(name, registrations, args) {
 
 function makeMethod(name, registrations) {
     return function() {
-        var args = rest(arguments);
+        var args = [].slice.call(arguments);
         return findRegistered(name, registrations, args).apply(this, args);
     };
 }

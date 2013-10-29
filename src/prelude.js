@@ -36,7 +36,7 @@ function bind(f) {
         if(f.bind) g = f.bind.apply(f, [o].concat(args));
         else {
             g = function() {
-                return f.apply(o, args.concat(rest(arguments)));
+                return f.apply(o, args.concat([].slice.call(arguments)));
             };
         }
 
