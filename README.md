@@ -42,6 +42,7 @@ prototype mutation.
 A method instance is a product of a name, a predicate and an
 implementation:
 
+```javascript
    var env = fantasy.environment()
        .method(
            // Name
@@ -57,9 +58,11 @@ implementation:
        );
 
    env.negate(100) == -100;
+```
 
 We can now override the environment with Some more implementations:
 
+```javascript
    var env2 = env
        .method(
            'negate',
@@ -73,6 +76,7 @@ We can now override the environment with Some more implementations:
 
    env2.negate(100) == -100;
    env2.negate(true) == false;
+```
 
 Environments are immutable; references to `env` won't see an
 implementation for boolean. The `env2` environment could have
@@ -83,7 +87,10 @@ Properties can be accessed without dispatching on arguments. They
 can almost be thought of as methods with predicates that always
 return true:
 
+```javascript
    var env = fantasy.environment()
-       .property('name', 'Squishy');
+       .property('name', 'Fantasy');
 
-   env.name === 'Squishy';
+   env.name === 'Fantasy';
+```
+
