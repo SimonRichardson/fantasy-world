@@ -112,15 +112,14 @@ function environment(methods, properties) {
 
     self.envConcat = function(extraMethods, extraProperties) {
         var newMethods = {},
-            newProperties = {},
-            i;
+            newProperties = {};
 
-        for(i in methods) {
+        for(var i in methods) {
             newMethods[i] = methods[i].concat(extraMethods[i]);
         }
-        for(i in extraMethods) {
-            if(i in newMethods) continue;
-            newMethods[i] = extraMethods[i];
+        for(var j in extraMethods) {
+            if(j in newMethods) continue;
+            newMethods[j] = extraMethods[j];
         }
 
         return environment(
