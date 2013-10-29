@@ -1,6 +1,6 @@
-var prelude = require('./src/prelude'),
-	environment = require('./src/environment'),
-	daggy = require('daggy'),
+var daggy = require('daggy'),
+	helpers = require('fantasy-helpers'),
+	environment = require('fantasy-environment'),
 	combinators = require('fantasy-combinators'),
 	identities = require('fantasy-identities'),
 	promises = require('fantasy-promises'),
@@ -16,7 +16,7 @@ var prelude = require('./src/prelude'),
 	lenses = require('fantasy-lenses'),
 	fantasy = environment();
 
-fantasy = fantasy.envConcat({}, prelude)
+fantasy = fantasy.envConcat({}, helpers)
 	
 	//
 	//  ## Environment

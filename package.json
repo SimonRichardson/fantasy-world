@@ -17,6 +17,8 @@
 	},
 	"dependencies": {
 		"daggy": "0.0.x",
+		"fantasy-helpers": "0.0.x",
+		"fantasy-environment": "0.0.2",
 		"fantasy-combinators": "0.0.x",
 		"fantasy-identities": "0.0.x",
 		"fantasy-promises": "0.1.x",
@@ -39,7 +41,7 @@
 	"scripts": {
 		"test": "grunt"
 	},
-	"files": ["fantasy-world.js", "src/*.js"],
+	"files": ["fantasy-world.js"],
 	"main": "fantasy-world.js",
-  	"version": "0.0.7"
+  	"version": "0.0.8"
 }
