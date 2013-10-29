@@ -1,4 +1,5 @@
 var prelude = require('./prelude'),
+    create = prelude.create,
     extend = prelude.extend,
     singleton = prelude.singleton,
     getInstance = prelude.getInstance;
@@ -89,7 +90,7 @@ function makeMethod(name, registrations) {
 //   * `envAppend(e)` - combines two environments, biased to `e`
 //
 function environment(methods, properties) {
-    var self = getInstance(this, environment),
+    var self = this instanceof environment && !this.method && !this.property ? this : create(environment.prototype),
         method;
 
     methods = methods || {};
@@ -112,10 +113,11 @@ function environment(methods, properties) {
 
     self.envConcat = function(extraMethods, extraProperties) {
         var newMethods = {},
-            newProperties = {};
+            possibleMethods;
 
         for(var i in methods) {
-            newMethods[i] = methods[i].concat(extraMethods[i]);
+            possibleMethods = extraMethods[i] || [];
+            newMethods[i] = methods[i].concat(possibleMethods);
         }
         for(var j in extraMethods) {
             if(j in newMethods) continue;
