@@ -8,20 +8,20 @@ Collection of the [Fantasy-Land](https://github.com/puffnfresh/fantasy-land) imp
 
 ## Fantasy-Land:
 
-* [https://github.com/puffnfresh/daggy](daggy)
-* [https://github.com/puffnfresh/fantasy-combinators](Fantasy-Combinators)
-* [https://github.com/puffnfresh/fantasy-identities](Fantasy-Identities)
-* [https://github.com/puffnfresh/fantasy-promises](Fantasy-Promises)
-* [https://github.com/puffnfresh/fantasy-validations](Fantasy-Validations)
-* [https://github.com/puffnfresh/fantasy-states](Fantasy-States)
-* [https://github.com/puffnfresh/fantasy-options](Fantasy-Options)
-* [https://github.com/puffnfresh/fantasy-eithers](Fantasy-Eithers)
-* [https://github.com/puffnfresh/fantasy-io](Fantasy-IO)
-* [https://github.com/puffnfresh/fantasy-tuples](Fantasy-Tuples)
-* [https://github.com/puffnfresh/fantasy-cofrees](Fantasy-Cofrees)
-* [https://github.com/puffnfresh/fantasy-readers](Fantasy-Readers)
-* [https://github.com/puffnfresh/fantasy-stores](Fantasy-Stores)
-* [https://github.com/puffnfresh/fantasy-lenses](Fantasy-Lenses)
+* [daggy](https://github.com/puffnfresh/daggy)
+* [Fantasy-Combinators](https://github.com/puffnfresh/fantasy-combinators)
+* [Fantasy-Identities](https://github.com/puffnfresh/fantasy-identities)
+* [Fantasy-Promises](https://github.com/puffnfresh/fantasy-promises)
+* [Fantasy-Validations](https://github.com/puffnfresh/fantasy-validations)
+* [Fantasy-States](https://github.com/puffnfresh/fantasy-states)
+* [Fantasy-Options](https://github.com/puffnfresh/fantasy-options)
+* [Fantasy-Eithers](https://github.com/puffnfresh/fantasy-eithers)
+* [Fantasy-IO](https://github.com/puffnfresh/fantasy-io)
+* [Fantasy-Tuples](https://github.com/puffnfresh/fantasy-tuples)
+* [Fantasy-Cofrees](https://github.com/puffnfresh/fantasy-cofrees)
+* [Fantasy-Readers](https://github.com/puffnfresh/fantasy-readers)
+* [Fantasy-Stores](https://github.com/puffnfresh/fantasy-stores)
+* [Fantasy-Lenses](https://github.com/puffnfresh/fantasy-lenses)
 
 ## Prelude
 
