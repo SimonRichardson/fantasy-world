@@ -10,7 +10,7 @@ Collection of the [Fantasy-Land](https://github.com/puffnfresh/fantasy-land) imp
 
 * [daggy](https://github.com/puffnfresh/daggy)
 * [Fantasy-Helpers](https://github.com/puffnfresh/fantasy-helpers)
-* [Fantasy-Environmentt](https://github.com/SimonRichardson/fantasy-environment)
+* [Fantasy-Environment](https://github.com/SimonRichardson/fantasy-environment)
 * [Fantasy-Combinators](https://github.com/puffnfresh/fantasy-combinators)
 * [Fantasy-Identities](https://github.com/puffnfresh/fantasy-identities)
 * [Fantasy-Promises](https://github.com/puffnfresh/fantasy-promises)
